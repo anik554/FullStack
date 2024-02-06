@@ -13,6 +13,8 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
+import Education from "./Education";
+import TabsView from "./TabsView";
 
 const AccordionUsage: React.FC = () => {
   const isMobile = useMediaQuery("(min-width:600px)");
@@ -62,6 +64,7 @@ const AccordionUsage: React.FC = () => {
       >
         Professional Resume
       </Typography>
+      <TabsView />
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -196,9 +199,10 @@ const AccordionUsage: React.FC = () => {
           Education
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          <Education />
         </AccordionDetails>
+        
+        
       </Accordion>
       <Accordion>
         <AccordionSummary
