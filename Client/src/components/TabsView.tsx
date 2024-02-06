@@ -39,7 +39,7 @@ const TabsView: React.FC = () => {
         <Tab icon={<PhoneIphoneIcon />} label="EMPLYMENT" />
         <Tab icon={<PhoneIphoneIcon />} label="REFERANCE" />
       </Tabs>
-      <Box role="tabpanel" hidden={tabValue !== 0} component={Paper} p={2}>
+      <Box role="tabpanel" hidden={tabValue !== 0} component={Paper} p={2} elevation={3}> 
         {tabValue === 0 && (
           <>
             <Accordion>
@@ -68,7 +68,7 @@ const TabsView: React.FC = () => {
           </>
         )}
       </Box>
-      <Box role="tabpanel" hidden={tabValue !== 1}>
+      <Box role="tabpanel" hidden={tabValue !== 1} component={Paper} p={2} elevation={3}>
         {tabValue === 1 && (
           <>
             <Accordion>
@@ -98,7 +98,7 @@ const TabsView: React.FC = () => {
           </>
         )}
       </Box>
-      <Box role="tabpanel" hidden={tabValue !== 2}>
+      <Box role="tabpanel" hidden={tabValue !== 2} component={Paper} p={2} elevation={3}>
         {tabValue === 2 && (
           <>
             <Accordion>
