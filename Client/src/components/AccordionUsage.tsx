@@ -196,7 +196,7 @@ const AccordionUsage: React.FC = () => {
           id="panel2-header"
           sx={{ fontSize: "18px" }}
         >
-          Education
+          EDUCATION/TRAINING
         </AccordionSummary>
         <AccordionDetails>
           <Education />
